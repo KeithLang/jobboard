@@ -1,13 +1,46 @@
-<h1>Jobs</h1>
+<%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Work+Sans', media: 'all', 'data-turbolinks-track' => true %>
 
-<% @jobs.each do |job| %>
-<div class="job">
-  <h2><%= link_to job.title, job.url %></h2>
-  <p><%= job.company %>
-  </div>
-  <% end %>
+<div class="container-fluid">
+  
+ <div class="text-center"><%= image_tag "soundtracks-cinema-logo.png", :class => "logo" %></div>
 
-<p><%= link_to "add a job", new_job_path %></p>
+ <h1 class="text-center text-uppercase">Jobs For Composers</h1>
+    <div class="row-fluid">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is playing constantly on our headphones at the moment<a href="https://t.co/qoqSTAER5b">https://t.co/qoqSTAER5b</a><br>Incredible production. Moving music by <a href="https://twitter.com/AWVFTS">@AWVFTS</a></p>&mdash; Soundtracks.io (@soundtracks_io) <a href="https://twitter.com/soundtracks_io/status/705734244820238336">March 4, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="is" dir="ltr"><a href="https://twitter.com/hashtag/Sicario?src=hash">#Sicario</a> composer jóhann jóhannsson is the next big thing in film music.<a href="https://t.co/Fl7T4ounKR">https://t.co/Fl7T4ounKR</a><a href="https://twitter.com/JohannJohannss">@JohannJohannss</a> <a href="https://t.co/COXQgb8hHY">pic.twitter.com/COXQgb8hHY</a></p>&mdash; Soundtracks.io (@soundtracks_io) <a href="https://twitter.com/soundtracks_io/status/705135996447399936">March 2, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>
+      
+      <div class="col-md-6">
+         
+        
+
+        <% @jobs.each do |job| %>
+            <div class="job">
+            <h2 class="text-uppercase"><%= link_to job.title, job.url %></h2>
+
+            <p><%= job.company %>
+
+            </div>
+            <hr>
+          <% end %>
 
 
-<p><%= paginate @jobs %></p>
+        <div class="add-a-job btn-group">  
+        <p><%= link_to "ADD A JOB", new_job_path, :class => "btn btn-success align-center" %></p>
+      </div>
+
+
+        <p><%= paginate @jobs %></p>
+      </div>
+
+
+      
+    </div>
+</div>

@@ -1,14 +1,52 @@
 // Place all the styles related to the jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
-  background: #CCC;
-  color: white;
-  font: 14px/1.5 Helvetica, Arial, sans-serif;
-  margin: 20px auto;
-  width: 500px;
+  /* background: #CCC; */
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-size: 100%;
+  color: #222;
+  /* font: 14px/1.5 Helvetica, Arial, sans-serif; */
+  font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 1.6rem;
+  /* margin: 20px auto;
+  width: 500px; */
 }
 a {
-  color: #111;
-  text-decoration: none;
+  color: #FFF;
+  font-style: bold;
+  text-decoration: none !important;
+  font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+  /* text-shadow: 1px 1px #000; */
+
 }
+
+img.logo {
+  max-width: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: auto;
+}
+
+
+h1 {
+  color: #FFF;
+}
+
+.add-a-job {
+  padding-top: 50px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #111;
+    border-color: #FFF;
+    }
