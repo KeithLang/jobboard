@@ -1,9 +1,17 @@
 
-<div class="container">
-<%= simple_form_for @job do |form| %>
-  <%= form.input :title, label: "Job title" %>
-  <%= form.input :company, label: "Your company" %>
-  <%= form.input :url, label: "Link to job" %>
-  <%= form.button :submit %>
-<% end %>
-</duv>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-2"></div>
+
+      <div class="col-md-8">
+    <%= simple_form_for @job do |form| %>
+      <%= form.input :title, label: "Job" %>
+      <%= form.input :company, label: "Compmany/Project" %>
+      <%= form.input :url, label: "URL" %>
+      <%= form.input :details, label: "Details" %>
+      <%= form.button :submit %>
+    <% end %>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</div>

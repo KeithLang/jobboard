@@ -1,5 +1,5 @@
 <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Work+Sans', media: 'all', 'data-turbolinks-track' => true %>
-
+<%= stylesheet_link_tag 'uilang' %>
 <div class="container-fluid">
   
  <div class="text-center"><%= image_tag "soundtracks-cinema-logo.png", :class => "logo" %></div>
@@ -7,7 +7,7 @@
  <h1 class="text-center text-uppercase">Jobs For Composers</h1>
     <div class="row-fluid">
       <div class="col-md-1"></div>
-      <div class="col-md-3">
+      <div class="col-md-3 tweets">
         
         <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is playing constantly on our headphones at the moment<a href="https://t.co/qoqSTAER5b">https://t.co/qoqSTAER5b</a><br>Incredible production. Moving music by <a href="https://twitter.com/AWVFTS">@AWVFTS</a></p>&mdash; Soundtracks.io (@soundtracks_io) <a href="https://twitter.com/soundtracks_io/status/705734244820238336">March 4, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -17,18 +17,21 @@
 
       </div>
       
-      <div class="col-md-6">
+      <div class="col-md-4 jobs">
          
         
-
+        
         <% @jobs.each do |job| %>
             <div class="job">
-            <h2 class="text-uppercase"><%= link_to job.title, job.url %></h2>
+            
+            <h2><%= image_tag "movies.png", :class => "movie-icon" %><%= link_to job.title %></h2>
+            <p><%= job.url %></p>
+            <p><%= job.details %></p>
 
             <p><%= job.company %>
 
             </div>
-            <hr>
+            <hr class="black">
           <% end %>
 
 
@@ -40,7 +43,24 @@
         <p><%= paginate @jobs %></p>
       </div>
 
+    <div class="col-md-3 box">
+      <h2>ABOUT</h2>
+      Soundtracks.io is a free jobs board for Film, TV, and Game composers.
 
+      <h2>ADD A JOB</h2>
+      Send an email to info@soundtrack.io or a tweet to <a class="a-normal" href="https://twitter.com/soundtracks_io">@soundtracks_io</a> with some of the following details: <br>
+      <ol>
+        <li>Title of Job </li>
+        <li>Company/Project/Client</li>
+        <li>Brief details </li>
+        <li>URL (if exists)</li>
+        <li>Contact details
+      </ol>
+    
+      If you would like to use a tweet as a job posting simply mention in your tweet to @soundtracks_io that you'd like a retweet!
       
+      <div>
+
+      <div class="col-md-1"></div>
     </div>
 </div>

@@ -2,16 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
 body {
   /* background: #CCC; */
-  background-image: url(background.jpg);
+  background: radial-gradient(ellipse farthest-side at 100% 100%, #F8FFF3 10%, #85D8CE 50%, #085078 120%);
+  /*background-image: url(background.jpg); */
   background-size: cover;
   background-size: 100%;
   color: #222;
-  /* font: 14px/1.5 Helvetica, Arial, sans-serif; */
-  font-family: 'Arial', sans-serif;
-  font-weight: 100;
-  font-size: 1.6rem;
+  /*font: 12px Raleway, Arial, sans-serif; */
+  /* font-family: 'Arial', sans-serif; */
+  font: 500 15px "helvetica neue", helvetica, arial, sans-serif;
+  /* font-weight: 400;
+  font-size: 1.6rem; */
   /* margin: 20px auto;
   width: 500px; */
 }
@@ -24,6 +28,14 @@ a {
   font-size: 1.8rem;
   /* text-shadow: 1px 1px #000; */
 
+}
+
+
+a.a-normal {
+  color: #FFF;
+  /*font: 12px Raleway, Arial, sans-serif; */
+  /* font-family: 'Arial', sans-serif; */
+  font: 500 15px "helvetica neue", helvetica, arial, sans-serif;
 }
 
 img.logo {
@@ -39,6 +51,7 @@ img.logo {
 
 h1 {
   color: #FFF;
+  text-shadow: 2px 2px #111;
 }
 
 .add-a-job {
@@ -50,3 +63,42 @@ h1 {
     background-color: #111;
     border-color: #FFF;
     }
+
+
+hr.black {
+  /* border-top: 1px solid #000; */
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.movie-icon {
+  width: 45px;
+}
+
+.box {
+      border: 1px solid rgba(255,255,255,0.15);
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 20px;
+    border-radius: 7px;
+}
+
+/*
+.jobs {
+   border: 1px solid rgba(255,255,255,0.15);
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 20px;
+    border-radius: 7px;
+}
+*/
+
+.jobs {
+text-align: center;
+
+}
+
+.tweets {
+      border: 1px solid rgba(255,255,255,0.15);
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 0px;
+    border-radius: 7px;
+}
+
