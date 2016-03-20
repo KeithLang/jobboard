@@ -12,7 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require uilang
+//= require get-shit-done
+//= require custom
+//= require application.js
+//= require gsdk-radio
+//= require gsdk-checkbox
+//= require gsdk-bootstrapswitch
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .

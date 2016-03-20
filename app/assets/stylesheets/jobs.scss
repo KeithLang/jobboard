@@ -6,7 +6,8 @@
 
 body {
   /* background: #CCC; */
-  background: radial-gradient(ellipse farthest-side at 100% 100%, #F8FFF3 10%, #85D8CE 50%, #085078 120%);
+ background: radial-gradient(ellipse farthest-side at 100% 100%, #F8FFF3 10%, #85D8CE 50%, #085078 120%);
+
   /*background-image: url(background.jpg); */
   background-size: cover;
   background-size: 100%;
@@ -44,14 +45,17 @@ img.logo {
   padding-bottom: 20px;
 }
 
+
+
 .container {
   width: auto;
 }
 
 
 h1 {
-  color: #FFF;
-  text-shadow: 2px 2px #111;
+  color: #428bca;
+  
+  /* text-shadow: 2px 2px #DDD; */
 }
 
 .add-a-job {
@@ -67,11 +71,12 @@ h1 {
 
 hr.black {
   /* border-top: 1px solid #000; */
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px dotted rgba(255,255,255,0.15);
 }
 
 .movie-icon {
-  width: 45px;
+  width: 35px;
+  padding-bottom: 5px;
 }
 
 .box {
@@ -95,10 +100,94 @@ text-align: center;
 
 }
 
+/*
 .tweets {
       border: 1px solid rgba(255,255,255,0.15);
     padding: 20px 20px 20px 20px;
     margin: 0 0 0px;
     border-radius: 7px;
 }
+*/
 
+
+#footer {
+  height: 60px !important;
+     margin: 0 auto -60px;
+}
+
+p.footer {
+  font-size: 10px;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
+.navbar-right {
+  margin-right: 100px
+}
+
+
+
+h2 a {
+  color: #111;
+  font-size: 3rem;
+}
+
+.icon-logo {
+  margin-left: 50px;
+  /*margin-top: 15px; */
+}
+
+
+.main-logo img {
+  margin-left: -150px;
+}
+
+
+.container.tim-container {
+  background: radial-gradient(ellipse farthest-side at 0% 50%, #F8FFF3 10%, #85D8CE 10%, #085078 120%);
+}
+
+.heading {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.search {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+p, h2, h3 {
+  color: #FFF
+}
+
+p {
+  margin: 0px;
+}
+
+.listings h3 {
+  margin: 0px 0 10px;
+}
+
+.listings h2 {
+  margin: 0px;
+}
+
+p.company {
+  font-size: 11px;
+}
+
+p.url {
+  font-size: 11px;
+
+}
+
+hr.listings {
+
+}

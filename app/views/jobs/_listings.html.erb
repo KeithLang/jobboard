@@ -1,0 +1,17 @@
+<% @jobs.each do |job| %>
+              <div class="job">
+              
+              <h2 class="listings"><%= image_tag "soundtracks-clickboard.png", :class => "movie-icon" %>  <%= link_to job.title %></h2>
+              
+              <p class="listings"><%= job.details %></p>
+              <p class="company"><%= job.company %></p>
+               <p class="url"><%= job.url %></p>
+
+              </div>
+              <hr class="black">
+            <% end %>
+
+
+            <div class="add-a-job btn-group">  
+            <p><%= link_to "ADD A JOB", new_job_path, :class => "btn btn-success align-center" %></p>
+             </div>
